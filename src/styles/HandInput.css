@@ -1,0 +1,177 @@
+.chatContainer {
+  width: 980px;
+  margin: auto;
+  min-height: calc(100vh - 65px);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 80px;
+  padding-top: 30px;
+  gap: 55px;
+}
+
+.userChat {
+  max-width: 620px;
+  background: #ffffff;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 20px;
+  align-self: flex-end;
+}
+
+.userChat p {
+  font-family: 'Vollkorn';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.userChat img {
+  width: 50px;
+  height: 50px;
+}
+
+.boatChatout {
+  max-width: 820px;
+}
+
+.boatChat {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px;
+  gap: 20px;
+  width: 100%;
+  background: #f2f2f2;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.boatChat p {
+  font-family: 'Vollkorn';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.boatChat img {
+  width: 50px;
+  height: 50px;
+}
+
+.otherOptions {
+  display: flex;
+  width: 100%;
+  gap: 35px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.otherOptions button {
+  display: flex;
+  padding: 10px 12px;
+  align-items: center;
+  gap: 8px;
+  background: #e8edf1;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  border: none;
+  transition: all 0.3s;
+}
+
+.otherOptions button:focus {
+  outline: none;
+}
+
+.otherOptions button p {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #252a31;
+}
+
+.otherOptions button img {
+  width: 18px;
+  height: 18px;
+}
+
+.otherOptions button:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 1024px) {
+  .chatContainer {
+    width: 750px;
+  }
+
+  .userChat {
+    max-width: 694px;
+  }
+
+  .boatChatout {
+    width: 714px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .chatContainer {
+    width: 525px;
+  }
+
+  .userChat {
+    max-width: 400px;
+  }
+
+  .boatChatout {
+    max-width: 450px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .chatContainer {
+    width: 320px;
+    gap: 25px;
+  }
+
+  .userChat {
+    max-width: 270px;
+  }
+
+  .userChat img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .boatChatout {
+    max-width: 290px;
+  }
+
+  .otherOptions button p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .boatChat img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .otherOptions button {
+    padding: 7px 8px;
+  }
+
+  .otherOptions {
+    gap: 12px;
+  }
+
+  .otherOptions button img {
+    width: 12px;
+    height: 12px;
+  }
+}
